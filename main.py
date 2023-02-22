@@ -1,3 +1,7 @@
-def string_to_list(text):
-    return [for x in text]
+import py_game
 
+def main():
+    py_game.run_game()    
+
+if __name__ == "__main__":
+    main()
