@@ -1,7 +1,11 @@
-import py_game
+class Person:
+    def __init__(self,name,age,sex):
+        self.name = name
+        self.age = age
+        self.sex = sex
 
-def main():
-    py_game.run_game()    
+    def describe(self):
+        return f"{self.name} is a {self.sex} and {self.age} years of old"
 
-if __name__ == "__main__":
-    main()
+maria = Person("Maria",23,"female")
+print(Person.describe(maria))
