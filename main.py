@@ -7,5 +7,12 @@ class Person:
     def describe(self):
         return f"{self.name} is a {self.sex} and {self.age} years of old"
 
-maria = Person("Maria",23,"female")
-print(Person.describe(maria))
+class Man(Person):
+
+    def __init__(self,name,age):
+        self.sex = 'Male'
+        self.name = name
+        self.age = age
+
+joao = Man('Joao',30)
+print(joao.describe())
